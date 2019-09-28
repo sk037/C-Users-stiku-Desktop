@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="TestScript.TestSearchAndAddToCart">
+        <methods>
+          <include name="ScreenOrientation"/>
+          <include name="launchApp"/>
+          <include name="appLaunch"/>
+          <include name="SearchText02"/>
+          <include name="AddToCart05"/>
+          <include name="VerifyItemName06"/>
+          <include name="ItemDetails04"/>
+          <include name="Search01"/>
+          <include name="VerifyProductCost07"/>
+          <include name="SelectProduct03"/>
+        </methods>
+      </class> <!-- TestScript.TestSearchAndAddToCart -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

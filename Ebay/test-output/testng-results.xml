@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="9" failed="0" total="9" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2861" started-at="2019-09-18T11:49:14Z" finished-at="2019-09-18T11:49:16Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2861" started-at="2019-09-18T11:49:14Z" finished-at="2019-09-18T11:49:16Z">
+      <class name="TestScript.TestSearchAndAddToCart">
+        <test-method status="FAIL" signature="launchApp()[pri:0, instance:TestScript.TestSearchAndAddToCart@520a3426]" name="launchApp" is-config="true" duration-ms="0" started-at="2019-09-18T17:19:14Z" finished-at="2019-09-18T17:19:14Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Connection refused: connect
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BLR2-1800101023', ip: '10.91.66.68', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: AndroidDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Connection refused: connect
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BLR2-1800101023', ip: '10.91.66.68', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.lambda$5(AppiumCommandExecutor.java:251)
+	at java.util.Optional.orElseGet(Unknown Source)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:38)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:84)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:94)
+	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:95)
+	at TestScript.BaseTest.launchApp(BaseTest.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	... 35 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method status="SKIP" signature="appLaunch()[pri:0, instance:TestScript.TestSearchAndAddToCart@520a3426]" name="appLaunch" duration-ms="0" started-at="2019-09-18T17:19:16Z" finished-at="2019-09-18T17:19:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appLaunch -->
+        <test-method status="SKIP" signature="ScreenOrientation()[pri:0, instance:TestScript.TestSearchAndAddToCart@520a3426]" name="ScreenOrientation" duration-ms="8" started-at="2019-09-18T17:19:16Z" finished-at="2019-09-18T17:19:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenOrientation -->
+        <test-method status="SKIP" signature="Search01()[pri:0, instance:TestScript.TestSearchAndAddToCart@520a3426]" name="Search01" duration-ms="0" started-at="2019-09-18T17:19:16Z" finished-at="2019-09-18T17:19:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search01 -->
+        <test-method status="SKIP" signature="SearchText02()[pri:0, instance:TestScript.TestSearchAndAddToCart@520a3426]" name="SearchText02" duration-ms="0" started-at="2019-09-18T17:19:16Z" finished-at="2019-09-18T17:19:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchText02 -->
+        <test-method status="SKIP" signature="SelectProduct03()[pri:0, instance:TestScript.TestSearchAndAddToCart@520a3426]" name="SelectProduct03" duration-ms="1" started-at="2019-09-18T17:19:16Z" finished-at="2019-09-18T17:19:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SelectProduct03 -->
+        <test-method status="SKIP" signature="ItemDetails04()[pri:0, instance:TestScript.TestSearchAndAddToCart@520a3426]" name="ItemDetails04" duration-ms="1" started-at="2019-09-18T17:19:16Z" finished-at="2019-09-18T17:19:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ItemDetails04 -->
+        <test-method status="SKIP" signature="AddToCart05()[pri:0, instance:TestScript.TestSearchAndAddToCart@520a3426]" name="AddToCart05" duration-ms="11" started-at="2019-09-18T17:19:16Z" finished-at="2019-09-18T17:19:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddToCart05 -->
+        <test-method status="SKIP" signature="VerifyItemName06()[pri:0, instance:TestScript.TestSearchAndAddToCart@520a3426]" name="VerifyItemName06" duration-ms="3" started-at="2019-09-18T17:19:16Z" finished-at="2019-09-18T17:19:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyItemName06 -->
+        <test-method status="SKIP" signature="VerifyProductCost07()[pri:0, instance:TestScript.TestSearchAndAddToCart@520a3426]" name="VerifyProductCost07" duration-ms="2" started-at="2019-09-18T17:19:16Z" finished-at="2019-09-18T17:19:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyProductCost07 -->
+      </class> <!-- TestScript.TestSearchAndAddToCart -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
